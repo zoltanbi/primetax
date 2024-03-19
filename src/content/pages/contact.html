@@ -1,0 +1,246 @@
+---
+title: "Contact"
+description: "Meta description for the page"
+preloadImg: "/assets/images/cabinets2.jpg"
+permalink: "contact/"
+---
+
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/contact.css" />
+{% endblock %} {% block body %}
+
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1400">
+    <div class="cs-container">
+        <span class="cs-int-title">Contact Us</span>
+        <div class="cs-breadcrumbs">
+            <a href="" class="cs-link">Home</a>
+            <a href="" class="cs-link cs-active">Contact</a>
+        </div>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/banner.jpg" />
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/banner.jpg" />
+        <img
+            decoding="async"
+            src="/assets/images/banner.jpg"
+            alt="people laughing"
+            width="1280"
+            height="568"
+            aria-hidden="true"
+        />
+    </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                   Contact                    -->
+<!-- ============================================ -->
+
+<section id="contact-1150">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Contact Us</span>
+            <h2 class="cs-title">We Love to Hear from Our Happy Customers</h2>
+        </div>
+        <div class="cs-contact-group">
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source
+                    media="(max-width: 600px)"
+                    srcset="/assets/images/contact.jpg"
+                />
+                <!--Tablet and above Image-->
+                <source
+                    media="(min-width: 601px)"
+                    srcset="/assets/images/contact.jpg"
+                />
+                <img
+                    loading="lazy"
+                    decoding="async"
+                    src="/assets/images/contact.jpg"
+                    alt="people"
+                    width="630"
+                    height="300"
+                />
+            </picture>
+            <p class="cs-contact-text">
+                There are many variations of passages of available but the
+                majority have suffered alteration in some form, by injected
+                randomized words even slightly believable.
+            </p>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <picture class="cs-icon-wrapper">
+                        <img
+                            aria-hidden="true"
+                            src="/assets/svgs/mech-phone.svg"
+                            alt="phone icon"
+                            class="cs-icon"
+                            width="40"
+                            height="40"
+                            decoding="async"
+                        />
+                    </picture>
+                    <div class="cs-flex-group">
+                        <span class="cs-header">Phone</span>
+                        <a
+                            href="tel:888-4565-789
+                        "
+                            class="cs-link"
+                            >+1 (888) 4565 789
+                        </a>
+                    </div>
+                </li>
+                <li class="cs-li">
+                    <picture class="cs-icon-wrapper">
+                        <img
+                            aria-hidden="true"
+                            src="/assets/svgs/mech-pin.svg"
+                            alt="address icon"
+                            class="cs-icon"
+                            width="40"
+                            height="40"
+                            decoding="async"
+                        />
+                    </picture>
+                    <div class="cs-flex-group">
+                        <span class="cs-header">Address</span>
+                        <a href="" class="cs-link"
+                            >2553 Woodbridge Lane, Boston Ware 120</a
+                        >
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--Form-->
+        <form
+            class="cs-form"
+            id="cs-form-1150"
+            name="Contact Form"
+            method="post"
+        >
+            <label class="cs-label">
+                Name
+                <input
+                    class="cs-input"
+                    required
+                    type="text"
+                    id="name-1150"
+                    name="name"
+                    placeholder="Name"
+                />
+            </label>
+            <label class="cs-label cs-email">
+                Email
+                <input
+                    class="cs-input"
+                    required
+                    type="email"
+                    id="email-1150"
+                    name="email"
+                    placeholder="Email"
+                />
+            </label>
+            <label class="cs-label cs-phone">
+                Phone
+                <input
+                    class="cs-input"
+                    required
+                    type="number"
+                    id="phone-1150"
+                    name="phone"
+                    placeholder="Phone"
+                />
+            </label>
+            <label class="cs-label">
+                Message
+                <textarea
+                    class="cs-input cs-textarea"
+                    required
+                    name="Message"
+                    id="message-1150"
+                    placeholder="Write message..."
+                ></textarea>
+            </label>
+            <button class="cs-button-solid cs-submit" type="submit">
+                Make an Appointment
+            </button>
+        </form>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
+
+<section id="reviews-727">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Testimonials</span>
+            <h2 class="cs-title">What Our Clients Have To Say About Us</h2>
+            <p class="cs-text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit. Amet
+                minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                sint. Velit officia consequat duis enim velit mollit.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <img
+                    class="cs-icon"
+                    src="/assets/svgs/yellow-quote.svg"
+                    alt="quote icon"
+                    aria-hidden="true"
+                    width="40"
+                    height="38"
+                    loading="lazy"
+                    decoding="async"
+                />
+                <h3 class="cs-h3">Professional and helpful</h3>
+                <p class="cs-item-text">
+                    In my journey spanning 22 years, I have yet to encounter
+                    anyone who surpasses Sharda in the realm of tax and finance.
+                    His depth of knowledge, unwavering commitment, and
+                    exceptional guidance have been a constant source of trust
+                    and reliability throughout my financial endeavours. Sharda
+                    is, without a doubt, the gold standard in his field, and I
+                    consider myself fortunate to have him as my financial guide.
+                    Highly recommended.
+                </p>
+                <span class="cs-name">Rosie</span>
+            </li>
+            <li class="cs-item">
+                <img
+                    class="cs-icon"
+                    src="/assets/svgs/yellow-quote.svg"
+                    alt="quote icon"
+                    aria-hidden="true"
+                    width="40"
+                    height="38"
+                    loading="lazy"
+                    decoding="async"
+                />
+                <h3 class="cs-h3">Best guidance and advice</h3>
+                <p class="cs-item-text">
+                    PRIME TAX has the best service you are looking for in
+                    accounting. Excellent welcoming, nice, and clean
+                    environment. Accountant MR Sharda Dubey is knowledgeable and
+                    will explain your each and every query in detail of your
+                    income and tax. I highly recommend this company for personal
+                    or business purposes. This is the place to go.
+                </p>
+                <span class="cs-name">Vijay</span>
+            </li>
+        </ul>
+        <a href="" class="cs-button-solid">See More Reviews</a>
+    </div>
+</section>
+
+{% endblock %}

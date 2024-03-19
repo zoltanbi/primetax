@@ -1,0 +1,924 @@
+---
+title: "Prime Tax & Accounting Services"
+description: "Meta description for the page"
+preloadImg: "/assets/images/landing.jpg"
+permalink: "/"
+eleventyNavigation:
+    key: Home
+    order: 100
+---
+
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/local.css" />
+<link rel="stylesheet" href="/assets/css/critical.css" />
+
+<!-- Script for Netlify Identity -->
+<script
+    defer
+    src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+></script>
+<script defer>
+    if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+            if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                    document.location.href = "/admin/";
+                });
+            }
+        });
+    }
+</script>
+{% endblock %} {% block body %}
+
+<!-- Usage Notes:
+We made this stitch to overlap the section below it, so if there's a patterned texture or image background on the next section below, it will overlap on top of it. Other Stitches like this would have a white gap between the cards and the next section. In order to make Stitches like this work, we need to add a padding top on the section below it to counteract the overlap. Here's the padding top you need to add to the section below this one and all the breakpoints to add them so this design will work with whatever comes after it:
+
+ON MOBILE (360px): add padding-top: (750/16rem); using LESS, or padding-top: calc(750 / 16 * 1rem); if you're using SCSS, or padding-top: 46.875rem; if you're just using vanilla CSS.
+
+ON TABLET (768px): Reset to padding-top: (500/16rem); using LESS, padding-top: calc(500 / 16 * 1rem) for SCSS or padding-top: 31.25rem; for CSS.
+
+ON DESKTOP (1024px): Reset to padding-top: (250/16rem); using LESS, padding-top: calc(250 / 16 * 1rem) for SCSS or padding-top: 15.625rem; for CSS.
+
+Doing this will complete the overlapping "breaking the container" look.
+-->
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-1297">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Welcome to Prime Tax</span>
+            <h1 class="cs-title">
+                Expert Accountants and Tax Advisors for Your Business
+            </h1>
+            <p class="cs-text">
+                With over 20 years in the industry, we are accounting
+                professionals and chartered tax practitioners providing expert
+                solutions for all businesses across Surrey, BC and the
+                surrounding Metro Vancouver area.
+            </p>
+            <a href="" class="cs-button-solid">Free Consultation</a>
+        </div>
+    </div>
+    <div class="cs-container">
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <img
+                        class="cs-icon"
+                        src="/assets/svgs/brain.svg"
+                        loading="lazy"
+                        decoding="async"
+                        alt="icon"
+                        width="40"
+                        height="40"
+                        aria-hidden="true"
+                    />
+                    <h3 class="cs-h3">Management Consulting</h3>
+                    <p class="cs-item-text">
+                        We will go ahead that extra mile to ensure our clients
+                        welfare, our working hours convenient to our Client's
+                        from contact.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <img
+                        class="cs-icon"
+                        src="/assets/svgs/users.svg"
+                        loading="lazy"
+                        decoding="async"
+                        alt="icon"
+                        width="40"
+                        height="40"
+                        aria-hidden="true"
+                    />
+                    <h3 class="cs-h3">Tax Services</h3>
+                    <p class="cs-item-text">
+                        We will go ahead that extra mile to ensure our clients
+                        welfare, our working hours convenient to our Client's
+                        from contact.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <img
+                        class="cs-icon"
+                        src="/assets/svgs/Layer.svg"
+                        loading="lazy"
+                        decoding="async"
+                        alt="icon"
+                        width="40"
+                        height="40"
+                        aria-hidden="true"
+                    />
+                    <h3 class="cs-h3">Accounting and Advisory</h3>
+                    <p class="cs-item-text">
+                        We will go ahead that extra mile to ensure our clients
+                        welfare, our working hours convenient to our Client's
+                        from contact.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <img
+                        class="cs-icon"
+                        src="/assets/svgs/Layer.svg"
+                        loading="lazy"
+                        decoding="async"
+                        alt="icon"
+                        width="40"
+                        height="40"
+                        aria-hidden="true"
+                    />
+                    <h3 class="cs-h3">Bookkeeping Services</h3>
+                    <p class="cs-item-text">
+                        We will go ahead that extra mile to ensure our clients
+                        welfare, our working hours convenient to our Client's
+                        from contact.
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--Floating Arrow-->
+    <img
+        class="cs-floater"
+        aria-hidden="true"
+        decoding="async"
+        src="/assets/svgs/arrow-3.svg"
+        alt="graphic"
+        width="956"
+        height="708"
+    />
+    <!--Background Image, background image added in CSS at 1600px wide for parallax effect-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source
+            media="(max-width: 1023px)"
+            srcset="
+                /assets/images/buildings-t.jpg
+            "
+        />
+        <!--Tablet and above Image-->
+        <source
+            media="(min-width: 1024px)"
+            srcset="
+                /assets/images/buildings.jpg
+            "
+        />
+        <img
+            loading="lazy"
+            decoding="async"
+            src="/assets/images/buildings.jpg"
+            alt="buildings"
+            width="1280"
+            height="568"
+        />
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-1308">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <div class="cs-image-group">
+            <!--Floating Box-->
+            <div class="cs-box">
+                <span class="cs-desc"
+                    >Accounting & support of your business</span
+                >
+            </div>
+            <!--Image-->
+            <picture class="cs-picture">
+                <source
+                    media="(max-width: 600px)"
+                    srcset="
+                        /assets/images/tax1.jpg
+                    "
+                />
+                <source
+                    media="(min-width: 601px)"
+                    srcset="
+                    /assets/images/tax1.jpg
+                    "
+                />
+                <img
+                    loading="lazy"
+                    decoding="async"
+                    src="/assets/images/tax1.jpg"
+                    alt="meeting"
+                    width="630"
+                    height="630"
+                    aria-hidden="true"
+                />
+            </picture>
+        </div>
+        <!-- Right Content Section-->
+        <div class="cs-content">
+            <span class="cs-topper">About Us</span>
+            <h2 class="cs-title">
+                Offering Management Consulting, Tax and Other Advisory Services
+            </h2>
+            <p class="cs-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing them elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit.
+            </p>
+            <p class="cs-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing them elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit.
+            </p>
+
+            <a
+                class="cs-button-solid"
+                aria-label="learn more about our programs"
+                href=""
+                >More About Us</a
+            >
+            <ul class="cs-ul">
+                <li class="cs-item">
+                    <span class="cs-number">20 +</span>
+                    <h3 class="cs-h3">Years Of Accounting Experience</h3>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-number">100 +</span>
+                    <h3 class="cs-h3">
+                        Company accounting migrations completed
+                    </h3>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-number">3000 +</span>
+                    <h3 class="cs-h3">Tax returns filed</h3>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-1331">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex-group">
+                <span class="cs-topper">OUR WAY OF WORKING</span>
+                <h2 class="cs-title">How To Get Started</h2>
+            </div>
+            <p class="cs-text">
+                Our initial consultation is more than just a cursory
+                introduction. It's a deep dive into the heart of your business,
+                allowing us to grasp its unique nuances, challenges, and
+                aspirations.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <span class="cs-step">Step 1</span>
+                    <h3 class="cs-h3">Initial Consultation</h3>
+                    <p class="cs-item-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing them
+                        elit, sed do eiusmod orchi in velit officia consequat
+                        duis enim molit save.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <span class="cs-step">Step 2</span>
+                    <h3 class="cs-h3">Delivery of Proposal</h3>
+                    <p class="cs-item-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing them
+                        elit, sed do eiusmod orchi in velit officia consequat
+                        duis enim molit save.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <span class="cs-step">Work Begins!</span>
+                    <h3 class="cs-h3">Save & Grow Fast</h3>
+                    <p class="cs-item-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing them
+                        elit, sed do eiusmod orchi in velit officia consequat
+                        duis enim molit save.
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source
+            media="(max-width: 600px)"
+            srcset="
+                /assets/images/building-white.jpg
+            "
+        />
+        <!--Tablet and above Image-->
+        <source
+            media="(min-width: 601px)"
+            srcset="
+            /assets/images/building-white.jpg
+            "
+        />
+        <img
+            src="/assets/images/building-white.jpg"
+            alt="building"
+            width="1920"
+            height="700"
+            decoding="async"
+            loading="lazy"
+        />
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                    Services                  -->
+<!-- ============================================ -->
+
+<section id="services-1301">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex-group">
+                <span class="cs-topper">Our Services</span>
+                <h2 class="cs-title">Professional Tax & Accounting Services</h2>
+            </div>
+            <p class="cs-text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit. Amet
+                minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                sint. Velit officia consequat duis enim velit mollit.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <img
+                        class="cs-icon"
+                        src="/assets/svgs/brain.svg"
+                        loading="lazy"
+                        decoding="async"
+                        alt="icon"
+                        width="40"
+                        height="40"
+                        aria-hidden="true"
+                    />
+                    <h3 class="cs-h3">Chartered Tax Practitioner Services</h3>
+                    <p class="cs-item-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing them
+                        elit, sed do eiusmod orchi in velit officia consequat
+                        duis enim molit save.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <img
+                        class="cs-icon"
+                        src="/assets/svgs/users.svg"
+                        loading="lazy"
+                        decoding="async"
+                        alt="icon"
+                        width="40"
+                        height="40"
+                        aria-hidden="true"
+                    />
+                    <h3 class="cs-h3">Payroll Services</h3>
+                    <p class="cs-item-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing them
+                        elit, sed do eiusmod orchi in velit officia consequat
+                        duis enim molit save.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <img
+                        class="cs-icon"
+                        src="/assets/svgs/Layer.svg"
+                        loading="lazy"
+                        decoding="async"
+                        alt="icon"
+                        width="40"
+                        height="40"
+                        aria-hidden="true"
+                    />
+                    <h3 class="cs-h3">Accounting and Advisory Services</h3>
+                    <p class="cs-item-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing them
+                        elit, sed do eiusmod orchi in velit officia consequat
+                        duis enim molit save.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <img
+                        class="cs-icon"
+                        src="/assets/svgs/Layer.svg"
+                        loading="lazy"
+                        decoding="async"
+                        alt="icon"
+                        width="40"
+                        height="40"
+                        aria-hidden="true"
+                    />
+                    <h3 class="cs-h3">Management Consulting</h3>
+                    <p class="cs-item-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing them
+                        elit, sed do eiusmod orchi in velit officia consequat
+                        duis enim molit save.
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="RPsbs-1218">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <div class="cs-image-group">
+            <!--Floating Box-->
+            <div class="cs-box">
+                <img
+                    class="cs-icon"
+                    loading="lazy"
+                    decoding="async"
+                    src="/assets/svgs/medal.svg"
+                    alt="icon"
+                    width="521"
+                    height="60"
+                    aria-hidden="true"
+                />
+                <span class="cs-number">20+</span>
+                <span class="cs-desc">Years of Experience</span>
+            </div>
+            <!--Big Background Image-->
+            <picture class="cs-picture">
+                <source
+                    media="(max-width: 600px)"
+                    srcset="
+                        /assets/images/monthly.jpg
+                    "
+                />
+                <source
+                    media="(min-width: 601px)"
+                    srcset="
+                    /assets/images/monthly.jpg
+                    "
+                />
+                <img
+                    loading="lazy"
+                    decoding="async"
+                    src="/assets/images/monthly.jpg"
+                    alt="meeting"
+                    width="522"
+                    height="560"
+                    aria-hidden="true"
+                />
+            </picture>
+            <!--Swirl-->
+            <img
+                class="cs-graphic"
+                loading="lazy"
+                decoding="async"
+                src="/assets/svgs/swirl.svg"
+                alt="icon"
+                width="715"
+                height="715"
+                aria-hidden="true"
+            />
+        </div>
+        <!-- Right Content Section-->
+        <div class="cs-content">
+            <span class="cs-topper">SERVICE HIGHLIGHT</span>
+            <h2 class="cs-title">Full Cycle Monthly Accounting Services</h2>
+            <p class="cs-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing them elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit.
+            </p>
+            <div class="cs-content-flair">
+                <div class="cs-bar">
+                    <h3 class="cs-h3">
+                        Savings Strategies
+                        <span class="cs-percentage">83%</span>
+                    </h3>
+                    <!--change the --progress number to match the percentage in cs-number-->
+                    <div class="cs-progress" aria-hidden="true">
+                        <span
+                            class="cs-progress-bar"
+                            style="--progress: 83%"
+                        ></span>
+                    </div>
+                </div>
+                <div class="cs-bar">
+                    <h3 class="cs-h3">
+                        Tax Planning
+                        <span class="cs-percentage">72%</span>
+                    </h3>
+                    <!--change the --progress number to match the percentage in cs-number-->
+                    <div class="cs-progress" aria-hidden="true">
+                        <span
+                            class="cs-progress-bar"
+                            style="--progress: 72%"
+                        ></span>
+                    </div>
+                </div>
+                <div class="cs-bar">
+                    <h3 class="cs-h3">
+                        Trusted Company
+                        <span class="cs-percentage">96%</span>
+                    </h3>
+                    <!--change the --progress number to match the percentage in cs-number-->
+                    <div class="cs-progress" aria-hidden="true">
+                        <span
+                            class="cs-progress-bar"
+                            style="--progress: 96%"
+                        ></span>
+                    </div>
+                </div>
+            </div>
+            <a
+                class="cs-button-solid"
+                aria-label="learn more about our programs"
+                href=""
+                >Learn More</a
+            >
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Side By Side Reverse             -->
+<!-- ============================================ -->
+
+<section id="RPsbsr-1218">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <div class="cs-image-group">
+            <!--Floating Box-->
+            <div class="cs-box">
+                <img
+                    class="cs-icon"
+                    loading="lazy"
+                    decoding="async"
+                    src="/assets/svgs/medal.svg"
+                    alt="icon"
+                    width="521"
+                    height="60"
+                    aria-hidden="true"
+                />
+                <span class="cs-number">30+</span>
+                <span class="cs-desc">Migrations Completed</span>
+            </div>
+            <!--Big Background Image-->
+            <picture class="cs-picture">
+                <source
+                    media="(max-width: 600px)"
+                    srcset="
+                    /assets/images/monthly.jpg
+                    "
+                />
+                <source
+                    media="(min-width: 601px)"
+                    srcset="
+                    /assets/images/monthly.jpg
+                    "
+                />
+                <img
+                    loading="lazy"
+                    decoding="async"
+                    src="/assets/images/monthly.jpg"
+                    alt="meeting"
+                    width="522"
+                    height="560"
+                    aria-hidden="true"
+                />
+            </picture>
+            <!--Swirl-->
+            <img
+                class="cs-graphic"
+                loading="lazy"
+                decoding="async"
+                src="/assets/svgs/swirl.svg"
+                alt="icon"
+                width="715"
+                height="715"
+                aria-hidden="true"
+            />
+        </div>
+        <!-- Right Content Section-->
+        <div class="cs-content">
+            <span class="cs-topper">Our Mission & Vision</span>
+            <h2 class="cs-title">
+                Accounting Software Migration Implementation
+            </h2>
+            <p class="cs-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing them elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit.
+            </p>
+
+            <ul class="list-box">
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img
+                            class="cs-h3-icon"
+                            aria-hidden="true"
+                            loading="lazy"
+                            decoding="async"
+                            src="/assets/images/trophy.svg"
+                            alt="icon"
+                            width="32"
+                            height="32"
+                        />
+                        Quick Books
+                    </h3>
+                    <p class="cs-item-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing them elit, sed do eiusmod tempor
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img
+                            class="cs-h3-icon"
+                            aria-hidden="true"
+                            loading="lazy"
+                            decoding="async"
+                            src="/assets/images/circle-check.svg"
+                            alt="icon"
+                            width="32"
+                            height="32"
+                        />
+                        Experienced
+                    </h3>
+                    <p class="cs-item-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing them elit, sed do eiusmod tempor
+                    </p>
+                </li>
+            </ul>
+
+            <a
+                class="cs-button-solid"
+                aria-label="learn more about our programs"
+                href=""
+                >Learn More</a
+            >
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                    Stats                     -->
+<!-- ============================================ -->
+
+<section id="stats-1230">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">YOU'RE IN GOOD COMPANY</span>
+                <h2 class="cs-title">
+                    Accounting Services With A Personal Touch
+                </h2>
+                <p class="cs-text">
+                    In the new era of technology we look in the future with
+                    certainty and pride for our company and business. consider
+                    all the drivers of change gives you the blocks & pride for
+                    our components you need to change to create a truly
+                    professional website era.
+                </p>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <img
+                        src="/assets/svgs/transparency.svg"
+                        alt="icon"
+                        class="cs-icon"
+                        aria-hidden="true"
+                        decoding="async"
+                        width="60"
+                        height="60"
+                    />
+                    <h3 class="cs-h3">Transparency</h3>
+                </li>
+                <li class="cs-item">
+                    <img
+                        src="/assets/svgs/empowerment.svg"
+                        alt="icon"
+                        class="cs-icon"
+                        aria-hidden="true"
+                        decoding="async"
+                        width="60"
+                        height="60"
+                    />
+                    <h3 class="cs-h3">Empowerment</h3>
+                </li>
+                <li class="cs-item">
+                    <img
+                        src="/assets/svgs/growth.svg"
+                        alt="icon"
+                        class="cs-icon"
+                        aria-hidden="true"
+                        decoding="async"
+                        width="60"
+                        height="60"
+                    />
+                    <h3 class="cs-h3">Growth</h3>
+                </li>
+                <li class="cs-item">
+                    <img
+                        src="/assets/svgs/partnership.svg"
+                        alt="icon"
+                        class="cs-icon"
+                        aria-hidden="true"
+                        decoding="async"
+                        width="60"
+                        height="60"
+                    />
+                    <h3 class="cs-h3">Partnership</h3>
+                </li>
+            </ul>
+        </div>
+        <ul class="cs-stat-group">
+            <li class="cs-stat">
+                <span class="cs-desc">Of Happy Clients</span>
+                <span class="cs-number">100's</span>
+            </li>
+            <li class="cs-stat">
+                <span class="cs-desc">Years of Experiences</span>
+                <span class="cs-number">20+</span>
+            </li>
+            <li class="cs-stat">
+                <span class="cs-desc">Company accounting migrations completed</span>
+                <span class="cs-number">30+</span>
+            </li>
+            <li class="cs-stat">
+                <span class="cs-desc">Tax Returns Filed</span>
+                <span class="cs-number">1000's</span>
+            </li>
+            <li class="cs-stat">
+                <span class="cs-desc">Client Reviews</span>
+                <span class="cs-number">10/10</span>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Pricing                     -->
+<!-- ============================================ -->
+
+<section id="pricing-1318">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Pricing</span>
+            <h2 class="cs-title">
+                Flexible Pricing Plans for Your Tailored Needs
+            </h2>
+            <p class="cs-text">
+                In the new era of technology we look in the future with
+                certainty and for any post types, or just they are so much great
+                of all to a program.
+            </p>
+            <a href="" class="cs-button-solid">Check Out Our Services</a>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <span class="cs-package">Standard Pack</span>
+                <span class="cs-desc">Perfect for small business</span>
+                <span class="cs-price">
+                    $99
+                    <span class="cs-duration">/Month</span>
+                </span>
+                <ul class="cs-ul">
+                    <li class="cs-li">5 Users</li>
+                    <li class="cs-li">20 Projects</li>
+                    <li class="cs-li">Limited Support</li>
+                </ul>
+                <a href="" class="cs-button-transparent">Contact</a>
+            </li>
+            <li class="cs-item cs-popular">
+                <span class="cs-package">Corporate Pack</span>
+                <span class="cs-desc">Designed for corporate clients</span>
+                <span class="cs-price">
+                    $599
+                    <span class="cs-duration">/Month</span>
+                </span>
+                <ul class="cs-ul">
+                    <li class="cs-li">0 Users</li>
+                    <li class="cs-li">Unlimited Projects</li>
+                    <li class="cs-li">24/7 Support</li>
+                </ul>
+                <a href="" class="cs-button-transparent">Contact</a>
+            </li>
+            <li class="cs-item">
+                <span class="cs-package">Standard Pack</span>
+                <span class="cs-desc">Perfect for small business</span>
+                <span class="cs-price">
+                    $99
+                    <span class="cs-duration">/Month</span>
+                </span>
+                <ul class="cs-ul">
+                    <li class="cs-li">5 Users</li>
+                    <li class="cs-li">20 Projects</li>
+                    <li class="cs-li">Limited Support</li>
+                </ul>
+                <a href="" class="cs-button-transparent">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <img
+        class="cs-floater"
+        aria-hidden="true"
+        src="/assets/svgs/reverse-pattern.svg"
+        decoding="async"
+        alt="moon"
+        width="652"
+        height="447"
+    />
+</section>
+
+<!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
+
+<section id="reviews-727">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Testimonials</span>
+            <h2 class="cs-title">What Our Clients Have To Say About Us</h2>
+            <p class="cs-text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit. Amet
+                minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                sint. Velit officia consequat duis enim velit mollit.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <img
+                    class="cs-icon"
+                    src="/assets/svgs/yellow-quote.svg"
+                    alt="quote icon"
+                    aria-hidden="true"
+                    width="40"
+                    height="38"
+                    loading="lazy"
+                    decoding="async"
+                />
+                <h3 class="cs-h3">Professional and helpful</h3>
+                <p class="cs-item-text">
+                    In my journey spanning 22 years, I have yet to encounter anyone who surpasses Sharda in the realm of tax and finance. His depth of knowledge, unwavering commitment, and exceptional guidance have been a constant source of trust and reliability throughout my financial endeavours. Sharda is, without a doubt, the gold standard in his field, and I consider myself fortunate to have him as my financial guide. Highly recommended.
+                </p>
+                <span class="cs-name">Rosie</span>
+            </li>
+            <li class="cs-item">
+                <img
+                    class="cs-icon"
+                    src="/assets/svgs/yellow-quote.svg"
+                    alt="quote icon"
+                    aria-hidden="true"
+                    width="40"
+                    height="38"
+                    loading="lazy"
+                    decoding="async"
+                />
+                <h3 class="cs-h3">Best guidance and advice</h3>
+                <p class="cs-item-text">
+                    PRIME TAX has the best service you are looking for in accounting. Excellent welcoming, nice, and clean environment. Accountant MR Sharda Dubey is  knowledgeable and will explain your each and every query in detail of your income and tax. I highly recommend this company for personal or business purposes. This is the place to go.
+                </p>
+                <span class="cs-name">Vijay</span>
+            </li>
+        </ul>
+        <a href="" class="cs-button-solid">See More Reviews</a>
+    </div>
+</section>
+
+{% include 'components/cta.html' %} {% endblock %}
